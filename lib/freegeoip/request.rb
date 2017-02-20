@@ -1,5 +1,6 @@
 require 'json'
 require 'uri'
+require 'net/http'
 
 module Freegeoip
   class Request
