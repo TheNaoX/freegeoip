@@ -1,5 +1,10 @@
 require "freegeoip/version"
+require "freegeoip/request"
+require "freegeoip/response"
 
 module Freegeoip
-  # Your code goes here...
+  def self.get(remote)
+    request = Request.new(remote)
+    Response.new(request.get)
+  end
 end
