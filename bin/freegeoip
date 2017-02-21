@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+
+require "freegeoip"
+
+
+case ARGV[0]
+when "get"
+  remote = ARGV[1]
+
+  puts "Searching for: #{remote}"
+  puts "------------------------"
+
+  response = Freegeoip.get(remote)
+
+  puts "IP: #{response.ip}"
+  puts "Country code: #{response.country_code}"
+  puts "Country name: #{response.country_name}"
+  puts "Region code: #{response.region_code}"
+  puts "Region name: #{response.region_name}"
+  puts "City: #{response.city}"
+  puts "ZIP Code: #{response.zip_code}"
+  puts "Time zone: #{response.time_zone}"
+  puts "Latitude: #{response.latitude}"
+  puts "Longitude: #{response.longitude}"
+  puts "Metro code: #{response.metro_code}"
+else
+  puts "Unknown command, usage: freegeoip get [IP|DOMAIN]"
+end
+

@@ -5,6 +5,6 @@ require "freegeoip/response"
 module Freegeoip
   def self.get(remote)
     request = Request.new(remote)
-    Response.new(request.get)
+    Response.new(remote, request.get)
   end
 end
