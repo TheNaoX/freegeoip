@@ -26,7 +26,19 @@ Anywhere in your code
 require 'freegeoip'
 
 Freegeoip.get('google.com')
- => #<Freegeoip::Response:0x007fbc8a299a98 @remote="google.com", @ip="2607:f8b0:4006:804::200e", @country_code="US", @country_name="United States", @region_code="", @region_name="", @city="", @zip_code="", @time_zone="", @latitude=37.751, @longitude=-97.822, @metro_code=0>
+ => #<Freegeoip::Response:0x007f9552bb9ba0
+     @remote="google.com",
+     @ip="172.217.7.14",
+     @country_code="US",
+     @country_name="United States",
+     @region_code="CA",
+     @region_name="California",
+     @city="Mountain View",
+     @zip_code="94043",
+     @time_zone="America/Los_Angeles",
+     @latitude=37.4192,
+     @longitude=-122.0574,
+     @metro_code=807>
 ```
 
 In the command line
