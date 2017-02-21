@@ -28,6 +28,25 @@ require 'freegeoip'
 Freegeoip.get('google.com')
 ```
 
+In the command line
+
+```bash
+$ freegeoip get google.com
+Searching for: google.com
+------------------------
+IP: 172.217.5.14
+Country code: US
+Country name: United States
+Region code: CA
+Region name: California
+City: Mountain View
+ZIP Code: 94043
+Time zone: America/Los_Angeles
+Latitude: 37.4192
+Longitude: -122.0574
+Metro code: 807
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
